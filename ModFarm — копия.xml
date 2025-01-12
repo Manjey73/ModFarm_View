@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Farm VisibleLogPrgFile="true" SaveLogPrgTime="2000">
+  <!--Test comment 1
+Test Comment 2-->
+  <Chickens>
+    <!--Тест 1
+Тест 2-->
+    <Device DeviceName="Курица 1" Location="Устройство 1" Active="true" DeviceType="Incubator">
+      <!--ИмяУстройства - комментарий по устройству-->
+      <!--Местоположение - комментарий по положению устройства-->
+      <!--Активно - Включает активность устройства для исполнения программ-->
+      <Calendar>
+        <Day DayNum="0" TempA="38.0" TempS="37,8" Humidity="60.0" iTempA="0.1" iTempS="0,1" iHumidity="1,0">
+          <!--Начальный день закладки
+Проверка строки-->
+        </Day>
+        <Day DayNum="1" TempA="38.0" TempS="37,8" Humidity="60.0" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Первый</Day>
+        <Day DayNum="2" TempA="38.0" TempS="37,8" Humidity="60.0" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Второй</Day>
+        <Day DayNum="3" TempA="37.8" TempS="37,8" Humidity="55" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Третий</Day>
+        <Day DayNum="4" TempA="37.8" TempS="37,8" Humidity="55" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Четвертый</Day>
+        <Day DayNum="5" TempA="37.7" TempS="37,8" Humidity="55" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Пятый</Day>
+        <Day DayNum="6" TempA="37.7" TempS="37,8" Humidity="55" iTempA="0.1" iTempS="0.1" iHumidity="1.0">День Шестой</Day>
+        <Day DayNum="7" TempA="37.7" TempS="37,8" Humidity="50" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Седьмой</Day>
+        <Day DayNum="8" TempA="37.7" TempS="37,8" Humidity="50" iTempA="0.1" iTempS="0.1" iHumidity="1.0">День Восьмой</Day>
+        <Day DayNum="9" TempA="37.7" TempS="37,8" Humidity="50" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Девятый</Day>
+        <Day DayNum="10" TempA="37.6" TempS="37,8" Humidity="50" iTempA="0.1" iTempS="0.1" iHumidity="1.0" Cooling="true" CoolTime="5" CoolAmount="12" CoolTemp="32.5" CooliTemp="0.5">День Десятый</Day>
+        <Day DayNum="11" TempA="37.6" TempS="38.1" Humidity="50" iTempA="0.1" iTempS="0.1" iHumidity="1.0" Cooling="true" CoolTime="5" CoolAmount="12" CoolTemp="32.5" CooliTemp="0.5">День Одинадцатый</Day>
+        <Day DayNum="12" TempA="37.5" TempS="37,8" Humidity="50" iTempA="0.1" iTempS="0.1" iHumidity="1.0" Cooling="true" CoolTime="6" CoolAmount="12" CoolTemp="32.5" CooliTemp="0.5">День Двенадцатый</Day>
+        <Day DayNum="13" TempA="37.4" TempS="37,8" Humidity="45" iTempA="0.1" iTempS="0.1" iHumidity="1.0" Cooling="true" CoolTime="6" CoolAmount="12" CoolTemp="32.5" CooliTemp="0.5">День Тринадцатый</Day>
+        <Day DayNum="14" TempA="37.3" TempS="38.4" Humidity="45" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="7" CoolAmount="12" CoolTemp="32.5" CooliTemp="0.5">День Четырнадцатый</Day>
+        <Day DayNum="15" TempA="37.3" TempS="38.4" Humidity="43" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="7" CoolAmount="12" CoolTemp="32.5" CooliTemp="0.5">День Четырнадцатый</Day>
+        <Day DayNum="16" TempA="37.3" TempS="38.4" Humidity="43" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="8" CoolAmount="12" CoolTemp="32.5" CooliTemp="0.5">День Пятнадцатый</Day>
+        <Day DayNum="17" TempA="37.3" TempS="38.4" Humidity="42" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="8" CoolAmount="12" CoolTemp="32.5" CooliTemp="0.5">День Шестнадцатый</Day>
+        <Day DayNum="18" TempA="37.3" TempS="38.4" Humidity="65" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="9" CoolAmount="12" CoolTemp="32.5" CooliTemp="0.5">День Семнадцатый</Day>
+        <Day DayNum="19" TempA="37.3" TempS="38,4" Humidity="70" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="10" CoolAmount="12" CoolTemp="32.5" CooliTemp="0.5">День Восемьнадцатый</Day>
+        <Day DayNum="20" TempA="37.3" TempS="38.4" Humidity="75" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="10" CoolAmount="12" CoolTemp="32.5" CooliTemp="0.5">День Девятьнадцатый</Day>
+      </Calendar>
+      <Programs>
+        <Program Task="Hysteresis" TaskPriority="1" TaskCycle="1000" ProgramType="Internal" ProgramActive="true">
+          <Inputs>
+            <Input ValName="EN" Initialize="false" Value="False" CnlNum="700" CnlCode="" />
+            <Input ValName="cycle" Initialize="true" Value="3000" CnlNum="701" CnlCode="" />
+            <Input ValName="mode" Initialize="true" Value="True" CnlNum="702" CnlCode="" />
+            <Input ValName="inCnl" Initialize="true" Value="20" CnlNum="703" CnlCode="" />
+            <Input ValName="low" Initialize="true" Value="22" CnlNum="704" CnlCode="" />
+            <Input ValName="high" Initialize="true" Value="24" CnlNum="705" CnlCode="" />
+          </Inputs>
+          <Outputs>
+            <Output ValName="Q" Retain="false" Value="False" CnlNum="706" CnlCode="" />
+          </Outputs>
+        </Program>
+        <Program Task="CalendarPrg" TaskPriority="1" TaskCycle="3000" ProgramType="Daytime" ProgramActive="true" ProgramRestart="false">
+          <Inputs>
+            <Input ValName="EN" Initialize="true" Value="True" CnlNum="1006" CnlCode="" />
+            <Input ValName="cycle" Initialize="false" Value="3000" CnlNum="1005" CnlCode="" />
+            <Input ValName="startDt" Initialize="true" Value="25.12.2024 6:00:00" CnlNum="1100" CnlCode="" />
+            <Input ValName="HysInCnl" Initialize="true" Value="34" CnlNum="1108" CnlCode="" />
+            <Input ValName="HysLow" Initialize="false" Value="37,2" CnlNum="1109" CnlCode="" />
+            <Input ValName="HysHigh" Initialize="false" Value="37,4" CnlNum="1110" CnlCode="" />
+          </Inputs>
+          <Outputs>
+            <Output ValName="tempA" Retain="false" Value="37,3" CnlNum="1105" CnlCode="" />
+            <Output ValName="dayNum" Retain="false" Value="43" CnlNum="1102" CnlCode="" />
+            <Output ValName="humidity" Retain="false" Value="75" CnlNum="1107" CnlCode="" />
+            <Output ValName="HysHQ" Retain="false" Value="True" CnlNum="1111" CnlCode="" />
+            <Output ValName="HysCQ" Retain="false" Value="False" CnlNum="1112" CnlCode="" />
+            <Output ValName="CURRT" Retain="false" Value="45616,27020239583" CnlNum="1113" CnlCode="" />
+            <Output ValName="STARTT" Retain="false" Value="45573,083333333336" CnlNum="1114" CnlCode="" />
+            <Output ValName="TOCURR" Retain="false" Value="45546,27020239583" CnlNum="1115" CnlCode="" />
+            <Output ValName="TOSTART" Retain="false" Value="45573,083333333336" CnlNum="1116" CnlCode="" />
+          </Outputs>
+        </Program>
+      </Programs>
+    </Device>
+    <Device DeviceName="Курица 2" Location="Устройство 2" Active="true" DeviceType="Output">
+      <Calendar>
+        <Day DayNum="0" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Нулевой</Day>
+        <Day DayNum="1" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Первый</Day>
+        <Day DayNum="2" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Второй</Day>
+        <Day DayNum="3" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Третий</Day>
+        <Day DayNum="4" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Четвертый</Day>
+        <Day DayNum="5" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Пятый</Day>
+        <Day DayNum="6" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Шестой</Day>
+        <Day DayNum="7" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Седьмой</Day>
+        <Day DayNum="8" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Восьмой</Day>
+        <Day DayNum="9" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Девятый</Day>
+        <Day DayNum="10" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Десятый</Day>
+        <Day DayNum="11" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Одинадцатый</Day>
+        <Day DayNum="12" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Двенадцатый</Day>
+        <Day DayNum="13" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Тринадцатый</Day>
+        <Day DayNum="14" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Четырнадцатый</Day>
+        <Day DayNum="14" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Четырнадцатый</Day>
+        <Day DayNum="15" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Пятнадцатый</Day>
+        <Day DayNum="16" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Шестнадцатый</Day>
+        <Day DayNum="17" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Семнадцатый</Day>
+        <Day DayNum="18" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Восемьнадцатый</Day>
+        <Day DayNum="19" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Девятьнадцатый</Day>
+        <Day DayNum="20" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Двадцатый</Day>
+      </Calendar>
+      <Programs>
+        <Program Task="Heater" TaskPriority="2" TaskCycle="5000" ProgramType="Internal" ProgramActive="true">
+          <Inputs>
+            <Input ValName="1" Value="" CnlNum="" CnlCode="" />
+            <Input ValName="2" Value="" CnlNum="" CnlCode="" />
+            <Input ValName="3" Value="" CnlNum="" CnlCode="" />
+          </Inputs>
+          <Outputs>
+            <Output ValName="1" Value="" CnlNum="" CnlCode="" />
+            <Output ValName="2" Value="" CnlNum="" CnlCode="" />
+            <Output ValName="3" Value="" CnlNum="" CnlCode="" />
+          </Outputs>
+        </Program>
+        <Program Task="Увлажнитель" ProgramType="Internal" ProgramActive="false">
+          <Inputs>
+            <Input ValName="1" Value="" CnlNum="" CnlCode="" />
+            <Input ValName="2" Value="" CnlNum="" CnlCode="" />
+            <Input ValName="3" Value="" CnlNum="" CnlCode="" />
+          </Inputs>
+          <Outputs>
+            <Output ValName="1" Value="" CnlNum="" CnlCode="" />
+            <Output ValName="2" Value="" CnlNum="" CnlCode="" />
+            <Output ValName="3" Value="" CnlNum="" CnlCode="" />
+          </Outputs>
+        </Program>
+        <Program Task="Кормление" ProgramType="Internal" ProgramActive="false">
+          <Inputs>
+            <Input ValName="1" Value="" CnlNum="" CnlCode="" />
+            <Input ValName="2" Value="" CnlNum="" CnlCode="" />
+            <Input ValName="3" Value="" CnlNum="" CnlCode="" />
+          </Inputs>
+          <Outputs>
+            <Output ValName="1" Value="" CnlNum="" CnlCode="" />
+            <Output ValName="2" Value="" CnlNum="" CnlCode="" />
+            <Output ValName="3" Value="" CnlNum="" CnlCode="" />
+          </Outputs>
+        </Program>
+        <Program Task="Уборка" ProgramType="Internal" ProgramActive="false">
+          <Inputs>
+            <Input ValName="1" Value="" CnlNum="" CnlCode="" />
+            <Input ValName="2" Value="" CnlNum="" CnlCode="" />
+            <Input ValName="3" Value="" CnlNum="" CnlCode="" />
+          </Inputs>
+          <Outputs>
+            <Output ValName="1" Value="" CnlNum="" CnlCode="" />
+            <Output ValName="2" Value="" CnlNum="" CnlCode="" />
+            <Output ValName="3" Value="" CnlNum="" CnlCode="" />
+          </Outputs>
+        </Program>
+      </Programs>
+    </Device>
+    <Device DeviceName="Курица 3" Location="Устройство 3" Active="true" DeviceType="Keeping">
+      <Calendar>
+        <Day DayNum="0" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Нулевой</Day>
+        <Day DayNum="1" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Первый</Day>
+        <Day DayNum="2" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Второй</Day>
+        <Day DayNum="3" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Третий</Day>
+        <Day DayNum="4" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Четвертый</Day>
+        <Day DayNum="5" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Пятый</Day>
+        <Day DayNum="6" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Шестой</Day>
+        <Day DayNum="7" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Седьмой</Day>
+        <Day DayNum="8" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Восьмой</Day>
+        <Day DayNum="9" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Девятый</Day>
+        <Day DayNum="10" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Десятый</Day>
+        <Day DayNum="11" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Одинадцатый</Day>
+        <Day DayNum="12" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Двенадцатый</Day>
+        <Day DayNum="13" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Тринадцатый</Day>
+        <Day DayNum="14" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Четырнадцатый</Day>
+        <Day DayNum="14" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Четырнадцатый</Day>
+        <Day DayNum="15" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Пятнадцатый</Day>
+        <Day DayNum="16" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Шестнадцатый</Day>
+        <Day DayNum="17" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Семнадцатый</Day>
+        <Day DayNum="18" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Восемьнадцатый</Day>
+        <Day DayNum="19" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Девятьнадцатый</Day>
+        <Day DayNum="20" TempA="38.0" TempS="37,7;37,9" Humidity="60.0" iTempS="1.0" iTempA="1.0" iHumidity="1.0">День Двадцатый</Day>
+      </Calendar>
+      <Programs>
+        <Program Task="Нагрев" ProgramType="Daytime" ProgramActive="false">
+          <Inputs>
+            <Input ValName="1" Value="" CnlNum="" CnlCode="" />
+            <Input ValName="2" Value="" CnlNum="" CnlCode="" />
+            <Input ValName="3" Value="" CnlNum="" CnlCode="" />
+          </Inputs>
+          <Outputs>
+            <Output ValName="1" Value="" CnlNum="" CnlCode="" />
+            <Output ValName="2" Value="" CnlNum="" CnlCode="" />
+          </Outputs>
+        </Program>
+      </Programs>
+    </Device>
+  </Chickens>
+</Farm>

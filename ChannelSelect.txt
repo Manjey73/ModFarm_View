@@ -1,0 +1,1 @@
+https://github.com/RapidScada/scada-v6/blob/master/ScadaCommon/ScadaCommon.Forms/Forms/FrmCnlSelect.cs

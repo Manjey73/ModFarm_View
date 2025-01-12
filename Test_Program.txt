@@ -1,0 +1,36 @@
+Программа - di0  pi0  Heater
+Полное имя  Scada.Server.Modules.ModXXX.Logic.Heater
+0 - EN False
+1 - Q False
+2 - EQ 0
+3 - cycle 0
+4 - terminated False
+
+0 - EN True
+1 - Q False
+2 - EQ 0
+3 - cycle 1000
+4 - terminated False
+
+Программа - di0  pi1  Heater
+Полное имя  Scada.Server.Modules.ModXXX.Logic.Heater
+0 - EN False
+1 - Q False
+2 - EQ 0
+3 - cycle 0
+4 - terminated False
+
+0 - EN True
+1 - Q False
+2 - EQ 0
+3 - cycle 3000
+4 - terminated False
+
+Stop EQ = EQ 523
+di0pi0  terminated = False
+di0pi0  terminated =  True
+
+Stop EQ = EQ 175
+di0pi1  terminated = False
+di0pi1  terminated =  True
+2024-07-29 15:51:24 Модуль ModXXX остановлен

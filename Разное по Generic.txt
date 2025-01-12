@@ -1,0 +1,22 @@
+        public T CreateInstance<T>()
+        {
+            return (T)Activator.CreateInstance(typeof(T));
+        }
+
+        void MyMethod(Object obj)
+        {
+            if (obj is Heater)
+            {
+                Heater a = obj as Heater;
+            }
+            else if (obj is HeaterTest)
+            {
+                HeaterTest b = obj as HeaterTest;
+            }
+        }
+
+
+        public T GetInstance<T>(string type)
+        {
+            return (T)Activator.CreateInstance(Type.GetType(type));
+        }

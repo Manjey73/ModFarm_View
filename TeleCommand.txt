@@ -1,0 +1,28 @@
+public TeleCommand()
+{
+    CommandID = 0L;
+    CreationTime = DateTime.MinValue;
+    ClientName = "";
+    UserID = 0;
+    CnlNum = 0;
+    ObjNum = 0;
+    DeviceNum = 0;
+    CmdNum = 0;
+    CmdCode = "";
+    CmdVal = double.NaN;
+    CmdData = null;
+    RecursionLevel = 0;
+}
+
+
+
+в том числе вот такая интересная штука 
+public enum WriteCommandFlags : byte
+{
+    None = 0,
+    ReturnToSender = 1,
+    ApplyFormulas = 2,
+    EnableEvents = 4,
+    Default = 6,
+    EnableAll = 7
+}

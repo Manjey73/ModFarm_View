@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModFarmDictionaries>
+	<Dictionary key="Scada.Server.Modules.ModFarm.View.Forms.FrmModuleConfig">
+		<Phrase key="AppTitle">Farm Management Module</Phrase>
+		<Phrase key="tbNew.Text">New Configuration</Phrase>
+		<Phrase key="btOpen.Text">Open</Phrase>
+		<Phrase key="tbSave.Text">Save</Phrase>
+		<Phrase key="tbSaveAs.Text">SaveAs</Phrase>
+		<Phrase key="btOK.Text">Apply</Phrase>
+		<Phrase key="btCancel.Text">Close</Phrase>
+
+		<Phrase key="MainNode">Farm</Phrase>
+		<Phrase key="VisibleLogPrgFile">ShowLogFiles</Phrase>
+		<Phrase key="SaveLogPrgTime">SavingTimeMin</Phrase>
+		<Phrase key="IterationTime">IterationTimeMs</Phrase>
+
+		<Phrase key="Chickens">Chickens</Phrase>
+		<Phrase key="Gooses">Gooses</Phrase>
+		<Phrase key="Turkeys">Turkeys</Phrase>
+		<Phrase key="Quails">Quails</Phrase>
+		<Phrase key="Ducks">Ducks</Phrase>
+		<Phrase key="Ostriches">Ostriches</Phrase>
+		<Phrase key="Cows">Cows</Phrase>
+		<Phrase key="Sheeps">Sheeps</Phrase>
+		<Phrase key="Goats">Goats</Phrase>
+		<Phrase key="Pigs">Pigs</Phrase>
+		<Phrase key="Rabbits">Rabbits</Phrase>
+		<Phrase key="Others">Others</Phrase>
+
+		<Phrase key="Calendar">Calendar Test</Phrase>
+		<Phrase key="Day">Day</Phrase>
+
+		<Phrase key="Device">Device</Phrase>
+		<Phrase key="Programs">Programs</Phrase>
+		<Phrase key="Program">Program</Phrase>
+		<Phrase key="Inputs">Inputs</Phrase>
+		<Phrase key="Input">Input</Phrase>
+		<Phrase key="Outputs">Outputs</Phrase>
+		<Phrase key="Output">Output</Phrase>
+
+		<Phrase key="AddGroup">Add Group</Phrase>
+		<Phrase key="AddDevice">Add Device</Phrase>
+		<Phrase key="AddParameters">Add Parameters</Phrase>
+		<Phrase key="AddCalendar">Add Calendar</Phrase>
+		<Phrase key="AddDay">Add Day</Phrase>
+		<Phrase key="AddPrograms">Add Programs</Phrase>
+		<Phrase key="AddProgram">Add Program</Phrase>
+		<Phrase key="AddInputs">Add Inputs</Phrase>
+		<Phrase key="AddOutputs">Add Outputs</Phrase>
+		<Phrase key="AddInput">Add Input</Phrase>
+		<Phrase key="AddOutput">Add Output</Phrase>
+		<Phrase key="AddComment">Add Comment</Phrase>
+		<Phrase key="AddText">Add Text</Phrase>
+		<Phrase key="Delete">Delete</Phrase>
+
+		<Phrase key="TitleLoadProject">Load  project...</Phrase>
+		<Phrase key="FilterProject">XML (*.xml)|*.xml|All files (*.*)|*.*</Phrase>
+		<Phrase key="DeviceName">DeviceName</Phrase>
+		<Phrase key="Location">Location</Phrase>
+		<Phrase key="Active">Active</Phrase>
+		<Phrase key="DeviceType">DeviceType</Phrase>
+
+		<Phrase key="Task">Task</Phrase>
+		<Phrase key="ProgramType">ProgramType</Phrase>
+		<Phrase key="ProgramActive">ProgramActive</Phrase>
+		<Phrase key="ProgramRestart">RestartProgram</Phrase>
+		<Phrase key="TaskPriority">TaskPriority</Phrase>
+		<Phrase key="TaskCycle">TaskCycle</Phrase>
+
+		<Phrase key="ValName">ValueName</Phrase>
+		<Phrase key="Value">Value</Phrase>
+		<Phrase key="CnlNum">Channel Number</Phrase>
+		<Phrase key="CnlCode">Tag Channel</Phrase>
+		<Phrase key="Initialize">Initialize</Phrase>
+		<Phrase key="Retain">Retain</Phrase>
+
+
+		<Phrase key="DayNum">DayNumber</Phrase>
+		<Phrase key="TempA">AirTemperature</Phrase>
+		<Phrase key="TempS">ShellTemperature</Phrase>
+		<Phrase key="Humidity">Humidity</Phrase>
+		<Phrase key="iTempA">Air Temperature Insensitivity</Phrase>
+		<Phrase key="iTempS">Insensitivity Of Shell Temperature</Phrase>
+		<Phrase key="iHumidity">Humidity Insensitivity</Phrase>
+		<Phrase key="Cooling">Cooling Active</Phrase>
+		<Phrase key="CoolTime">Cooling Time</Phrase>
+		<Phrase key="CoolAmount">Amount Cooling</Phrase>
+		<Phrase key="CoolTemp">Cooling Temperature</Phrase>
+		<Phrase key="CooliTemp">Cooling Temperature Insensitivity</Phrase>
+
+		<Phrase key="dgvAttrName">Parameter</Phrase>
+		<Phrase key="dgvAttrValue">Value</Phrase>
+
+		<Phrase key="errAddParameter">First you need to delete all the parameters</Phrase>
+		<Phrase key="errAddText">The text field already exists</Phrase>
+
+	</Dictionary>
+	<Dictionary key="Scada.Server.Modules.ModFarm.View.Forms.FrmParameters">
+		<Phrase key="gbComment.Text">Comment</Phrase>
+	</Dictionary>
+
+</ModFarmDictionaries>

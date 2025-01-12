@@ -1,0 +1,269 @@
+        //#region AllDevice
+        //private class AllDevice()
+        //{
+        //    public string group { get; set; }
+        //    public int deviceIndex { get; set; }
+
+        //    public Farm.Device farmdevice { get; set; }
+        //}
+
+        //private List<AllDevice> devices = new List<AllDevice>();
+        //#endregion AllDevice
+
+        //#region AllProgram
+        //private class AllProgram() // Класс для создания списка программ с указанием имени группы (Chickens, Cows и т.д.), Индекса устройства в группе, индекса программы, и собственно данных самой программы.
+        //{
+        //    public string group { get; set; }
+        //    public int deviceIndex { get; set; }
+        //    public string devName { get; set; }
+        //    public int programIndex { get; set; }
+        //    public Farm.Programs.ProgramX program { get; set; }
+        //}
+
+        //private List<AllProgram> programs = new List<AllProgram>();
+        //#endregion AllProgram
+
+
+
+
+
+
+            #region Раздельная запись групп
+            int ChickensCount = farm.Chickens.Count();
+            if (ChickensCount > 0)
+            {
+                List<Farm.Device> device = farm.Chickens; // Тест - нужны все, чтобы удалять файлы неактивных устройств. farm.Chickens.Where(x => x.Active == true).ToList();
+
+                foreach (var d in device)
+                {
+                    AllDevice actDev = new AllDevice();
+                    int index = farm.Chickens.IndexOf(d);
+
+                    actDev.group = "Chickens";
+                    actDev.deviceIndex = index;
+                    actDev.farmdevice = d;
+
+                    devices.Add(actDev); // Добавление устройства в список с указанием принадлежности и индекса в группе
+                    AddProgram(actDev);
+                }
+            }
+
+            int GoosesCount = farm.Gooses.Count();
+            if (GoosesCount > 0)
+            {
+                List<Farm.Device> device = farm.Gooses; // Тест - нужны все, чтобы удалять файлы неактивных устройств
+
+                foreach (var d in device)
+                {
+                    AllDevice actDev = new AllDevice();
+                    int index = farm.Gooses.IndexOf(d);
+
+                    actDev.group = "Gooses";
+                    actDev.deviceIndex = index;
+                    actDev.farmdevice = d;
+
+                    devices.Add(actDev); // Добавление устройства в список с указанием принадлежности и индекса в группе
+                    AddProgram(actDev);
+                }
+            }
+
+            int TurkeysCount = farm.Turkeys.Count();
+            if (TurkeysCount > 0)
+            {
+                List<Farm.Device> device = farm.Turkeys; // Тест - нужны все, чтобы удалять файлы неактивных устройств
+
+                foreach (var d in device)
+                {
+                    AllDevice actDev = new AllDevice();
+                    int index = farm.Turkeys.IndexOf(d);
+
+                    actDev.group = "Turkeys";
+                    actDev.deviceIndex = index;
+                    actDev.farmdevice = d;
+
+                    devices.Add(actDev); // Добавление устройства в список с указанием принадлежности и индекса в группе
+                    AddProgram(actDev);
+
+                }
+            }
+
+            int QuailsCount = farm.Quails.Count();
+            if (QuailsCount > 0)
+            {
+                List<Farm.Device> device = farm.Quails; // Тест - нужны все, чтобы удалять файлы неактивных устройств
+
+                foreach (var d in device)
+                {
+                    AllDevice actDev = new AllDevice();
+                    int index = farm.Quails.IndexOf(d);
+
+                    actDev.group = "Quails";
+                    actDev.deviceIndex = index;
+                    actDev.farmdevice = d;
+
+                    devices.Add(actDev); // Добавление устройства в список с указанием принадлежности и индекса в группе
+                    AddProgram(actDev);
+
+                }
+            }
+
+            int DucksCount = farm.Ducks.Count();
+            if (DucksCount > 0)
+            {
+                List<Farm.Device> device = farm.Ducks; // Тест - нужны все, чтобы удалять файлы неактивных устройств
+
+                foreach (var d in device)
+                {
+                    AllDevice actDev = new AllDevice();
+                    int index = farm.Ducks.IndexOf(d);
+
+                    actDev.group = "Ducks";
+                    actDev.deviceIndex = index;
+                    actDev.farmdevice = d;
+
+                    devices.Add(actDev); // Добавление устройства в список с указанием принадлежности и индекса в группе
+                    AddProgram(actDev);
+
+                }
+            }
+
+            int OstrichesCount = farm.Ostriches.Count();
+            if (OstrichesCount > 0)
+            {
+                List<Farm.Device> device = farm.Ostriches; // Тест - нужны все, чтобы удалять файлы неактивных устройств
+
+                foreach (var d in device)
+                {
+                    AllDevice actDev = new AllDevice();
+                    int index = farm.Ostriches.IndexOf(d);
+
+                    actDev.group = "Ostriches";
+                    actDev.deviceIndex = index;
+                    actDev.farmdevice = d;
+
+                    devices.Add(actDev); // Добавление устройства в список с указанием принадлежности и индекса в группе
+                    AddProgram(actDev);
+
+                }
+            }
+
+            int CowsCount = farm.Cows.Count();
+            if (CowsCount > 0)
+            {
+                List<Farm.Device> device = farm.Cows; // Тест - нужны все, чтобы удалять файлы неактивных устройств
+
+                foreach (var d in device)
+                {
+                    AllDevice actDev = new AllDevice();
+                    int index = farm.Cows.IndexOf(d);
+
+                    actDev.group = "Cows";
+                    actDev.deviceIndex = index;
+                    actDev.farmdevice = d;
+
+                    devices.Add(actDev); // Добавление устройства в список с указанием принадлежности и индекса в группе
+                    AddProgram(actDev);
+
+                }
+            }
+
+            int SheepsCount = farm.Sheeps.Count();
+            if (SheepsCount > 0)
+            {
+                List<Farm.Device> device = farm.Sheeps; // Тест - нужны все, чтобы удалять файлы неактивных устройств
+
+                foreach (var d in device)
+                {
+                    AllDevice actDev = new AllDevice();
+                    int index = farm.Sheeps.IndexOf(d);
+
+                    actDev.group = "Sheeps";
+                    actDev.deviceIndex = index;
+                    actDev.farmdevice = d;
+
+                    devices.Add(actDev); // Добавление устройства в список с указанием принадлежности и индекса в группе
+                    AddProgram(actDev);
+
+                }
+            }
+
+            int GoatsCount = farm.Goats.Count();
+            if (GoatsCount > 0)
+            {
+                List<Farm.Device> device = farm.Goats; // Тест - нужны все, чтобы удалять файлы неактивных устройств
+
+                foreach (var d in device)
+                {
+                    AllDevice actDev = new AllDevice();
+                    int index = farm.Goats.IndexOf(d);
+
+                    actDev.group = "Goats";
+                    actDev.deviceIndex = index;
+                    actDev.farmdevice = d;
+
+                    devices.Add(actDev); // Добавление устройства в список с указанием принадлежности и индекса в группе
+                    AddProgram(actDev);
+
+                }
+            }
+
+            int PigsCount = farm.Pigs.Count();
+            if (PigsCount > 0)
+            {
+                List<Farm.Device> device = farm.Pigs; // Тест - нужны все, чтобы удалять файлы неактивных устройств
+
+                foreach (var d in device)
+                {
+                    AllDevice actDev = new AllDevice();
+                    int index = farm.Pigs.IndexOf(d);
+
+                    actDev.group = "Pigs";
+                    actDev.deviceIndex = index;
+                    actDev.farmdevice = d;
+
+                    devices.Add(actDev); // Добавление устройства в список с указанием принадлежности и индекса в группе
+                    AddProgram(actDev);
+
+                }
+            }
+
+            int RabbitsCount = farm.Rabbits.Count();
+            if (RabbitsCount > 0)
+            {
+                List<Farm.Device> device = farm.Rabbits; // Тест - нужны все, чтобы удалять файлы неактивных устройств
+
+                foreach (var d in device)
+                {
+                    AllDevice actDev = new AllDevice();
+                    int index = farm.Rabbits.IndexOf(d);
+
+                    actDev.group = "Rabbits";
+                    actDev.deviceIndex = index;
+                    actDev.farmdevice = d;
+
+                    devices.Add(actDev); // Добавление устройства в список с указанием принадлежности и индекса в группе
+                    AddProgram(actDev);
+
+                }
+            }
+
+            int OthersCount = farm.Others.Count();
+            if (OthersCount > 0)
+            {
+                List<Farm.Device> device = farm.Others; // Тест - нужны все, чтобы удалять файлы неактивных устройств
+
+                foreach (var d in device)
+                {
+                    AllDevice actDev = new AllDevice();
+                    int index = farm.Others.IndexOf(d);
+
+                    actDev.group = "Others";
+                    actDev.deviceIndex = index;
+                    actDev.farmdevice = d;
+
+                    devices.Add(actDev); // Добавление устройства в список с указанием принадлежности и индекса в группе
+
+                    AddProgram(actDev);
+                }
+            }
+            #endregion Раздельная запись групп

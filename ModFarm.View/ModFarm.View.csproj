@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyVersion>6.3.0.1</AssemblyVersion>
+    <FileVersion>6.3.0.1</FileVersion>
+    <Company>Burakhin Andrey</Company>
+	<GenerateResourceWarnOnBinaryFormatterUse>false</GenerateResourceWarnOnBinaryFormatterUse>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ScadaCommFunc">
+      <HintPath>..\..\..\scada-v6-dll\ScadaCommFunc.dll</HintPath>
+    </Reference>
+    <Reference Include="ScadaCommon">
+      <HintPath>..\..\..\scada-v6-dll\ScadaCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="ScadaCommon.Forms">
+      <HintPath>..\..\..\scada-v6-dll\ScadaCommon.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="ScadaCommon.Log">
+      <HintPath>..\..\..\scada-v6-dll\ScadaCommon.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="ScadaServerCommon">
+      <HintPath>..\..\..\scada-v6-dll\ScadaServerCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Import Project="..\ModFarm.Shared\ModFarm.Shared.projitems" Label="Shared" />
+
+</Project>

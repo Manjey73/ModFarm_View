@@ -1,0 +1,16 @@
+https://translated.turbopages.org/proxy_u/en-ru.ru.1945e798-66a3977e-66754648-74722d776562/https/stackoverflow.com/questions/3697596/system-reflection-methodinfo-invoke-and-multiple-threads
+
+
+
+Вы можете запустить поток с помощью анонимного метода:
+
+Thread myThread = new Thread(delegate() {
+    object obj = Activator.CreateInstance(typeof(MyClassName));
+
+    object[] _objval = new object[3]; 
+    object[] parameters = new object[] { _objval };
+    MethodInfo mi = classType.GetMethod("MyMethod");
+    mi.Invoke(obj, parameters); 
+});
+myThread.Start();
+Код внутри delegate() { ... } представляет собой анонимный метод, который выполняется в новом потоке.

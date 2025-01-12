@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ModFarmDictionaries>
+	<Dictionary key="Scada.Server.Modules.ModFarm.View.Forms.FrmModuleConfig">
+		<Phrase key="AppTitle">Модуль Управления Фермой</Phrase>
+		<Phrase key="tbNew.Text">Новая конфигурация</Phrase>
+		<Phrase key="btOpen.Text">Открыть</Phrase>
+		<Phrase key="tbSave.Text">Сохранить</Phrase>
+		<Phrase key="tbSaveAs.Text">Сохранить как</Phrase>
+		<Phrase key="btOK.Text">Применить</Phrase>
+		<Phrase key="btCancel.Text">Закрыть</Phrase>
+
+		<Phrase key="MainNode">Ферма</Phrase>
+		<Phrase key="VisibleLogPrgFile">ПоказыватьЛогФайлов</Phrase>
+		<Phrase key="SaveLogPrgTime">ВремяСохраненияМин</Phrase>
+		<Phrase key="IterationTime">ВремяИтерацииМс</Phrase>
+
+		<Phrase key="Chickens">Куры</Phrase>
+		<Phrase key="Gooses">Гуси</Phrase>
+		<Phrase key="Turkeys">Индюки</Phrase>
+		<Phrase key="Quails">Перепела</Phrase>
+		<Phrase key="Ducks">Утки</Phrase>
+		<Phrase key="Ostriches">Страусы</Phrase>
+		<Phrase key="Cows">Коровы</Phrase>
+		<Phrase key="Sheeps">Овцы</Phrase>
+		<Phrase key="Goats">Козы</Phrase>
+		<Phrase key="Pigs">Свиньи</Phrase>
+		<Phrase key="Rabbits">Кролики</Phrase>
+		<Phrase key="Others">Другие</Phrase>
+
+		<Phrase key="Calendar">Календарь</Phrase>
+		<Phrase key="Day">День</Phrase>
+
+		<Phrase key="Device">Устройство</Phrase>
+		<Phrase key="Programs">Программы</Phrase>
+		<Phrase key="Program">Программа</Phrase>
+		<Phrase key="Inputs">Входы</Phrase>
+		<Phrase key="Input">Вход</Phrase>
+		<Phrase key="Outputs">Выходы</Phrase>
+		<Phrase key="Output">Выход</Phrase>
+
+		<Phrase key="AddGroup">Добавить Группу</Phrase>
+		<Phrase key="AddDevice">Добавить Устройство</Phrase>
+		<Phrase key="AddParameters">Добавить Параметры</Phrase>
+		<Phrase key="AddCalendar">Добавить Календарь</Phrase>
+		<Phrase key="AddDay">Добавить День</Phrase>
+		<Phrase key="AddPrograms">Добавить Программы</Phrase>
+		<Phrase key="AddProgram">Добавить Программу</Phrase>
+		<Phrase key="AddInputs">Добавить Входы</Phrase>
+		<Phrase key="AddOutputs">Добавить Выходы</Phrase>
+		<Phrase key="AddInput">Добавить Вход</Phrase>
+		<Phrase key="AddOutput">Добавить Выход</Phrase>
+		<Phrase key="AddComment">Добавить Комментарий</Phrase>
+		<Phrase key="AddText">Добавить Текст</Phrase>
+		<Phrase key="Delete">Удалить</Phrase>
+
+		<Phrase key="TitleLoadProject">Загрузить проект...</Phrase>
+		<Phrase key="FilterProject">XML (*.xml)|*.xml|Все файлы (*.*)|*.*</Phrase>
+		<Phrase key="DeviceName">ИмяУстройства</Phrase>
+		<Phrase key="Location">Местоположение</Phrase>
+		<Phrase key="Active">Активно</Phrase>
+		<Phrase key="DeviceType">Тип Устройства</Phrase>
+
+		<Phrase key="Task">Задача</Phrase>
+		<Phrase key="ProgramType">Тип Программы</Phrase>
+		<Phrase key="ProgramActive">Программа Активна</Phrase>
+		<Phrase key="ProgramRestart">Перезапустить Программу</Phrase>
+		<Phrase key="TaskPriority">Приоритет Задачи</Phrase>
+		<Phrase key="TaskCycle">Цикл Задачи</Phrase>
+
+		<Phrase key="ValName">ИмяПеременной</Phrase>
+		<Phrase key="Value">Значение</Phrase>
+		<Phrase key="CnlNum">Номер Канала</Phrase>
+		<Phrase key="CnlCode">Код Канала</Phrase>
+		<Phrase key="Initialize">Инициализация</Phrase>
+		<Phrase key="Retain">Сохраняемость</Phrase>
+
+
+		<Phrase key="DayNum">НомерДня</Phrase>
+		<Phrase key="TempA">ТемператураВоздуха</Phrase>
+		<Phrase key="TempS">ТемператураСкорлупы</Phrase>
+		<Phrase key="Humidity">Влажность</Phrase>
+		<Phrase key="iTempA">НечувствительностьТВ</Phrase>
+		<Phrase key="iTempS">НечувствительностьТС</Phrase>
+		<Phrase key="iHumidity">НечувствительностьВл</Phrase>
+		<Phrase key="Cooling">Охлаждение Активно</Phrase>
+		<Phrase key="CoolTime">Время охлаждения</Phrase>
+		<Phrase key="CoolAmount">Количество Охлаждения</Phrase>
+		<Phrase key="CoolTemp">Температруа Охлаждения</Phrase>
+		<Phrase key="CooliTemp">НечувствительностьТО</Phrase>
+
+		<Phrase key="dgvAttrName">Параметр</Phrase>
+		<Phrase key="dgvAttrValue">Значение</Phrase>
+
+		<Phrase key="errAddParameter">Сперва необходимо удалить все параметры</Phrase>
+		<Phrase key="errAddText">Текстовое поле уже существует</Phrase>
+
+
+	</Dictionary>
+	<Dictionary key="Scada.Server.Modules.ModFarm.View.Forms.FrmParameters">
+		<Phrase key="gbComment.Text">Комментарий</Phrase>
+	</Dictionary>
+
+</ModFarmDictionaries>

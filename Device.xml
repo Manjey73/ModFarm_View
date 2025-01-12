@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Device Name="Курица 1" Location="Устройство 1" Active="true" DeviceType="Incubator">
+  <Days>
+    <Day DayNum="0" TempA="38.0" TempS="37,8" Humidity="60.0" iTempA="0.1" iTempS="0,1" iHumidity="1,0">День Нулевой<!--Начальный день закладки--></Day>
+    <Day DayNum="1" TempA="38.0" TempS="37,8" Humidity="60.0" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Первый</Day>
+    <Day DayNum="2" TempA="38.0" TempS="37,8" Humidity="60.0" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Второй</Day>
+    <Day DayNum="3" TempA="37.8" TempS="37,8" Humidity="55" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Третий</Day>
+    <Day DayNum="4" TempA="37.8" TempS="37,8" Humidity="55" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Четвертый</Day>
+    <Day DayNum="5" TempA="37.7" TempS="37,8" Humidity="55" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Пятый</Day>
+    <Day DayNum="6" TempA="37.7" TempS="37,8" Humidity="55" iTempA="0.1" iTempS="0.1" iHumidity="1.0">День Шестой</Day>
+    <Day DayNum="7" TempA="37.7" TempS="37,8" Humidity="50" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Седьмой</Day>
+    <Day DayNum="8" TempA="37.7" TempS="37,8" Humidity="50" iTempA="0.1" iTempS="0.1" iHumidity="1.0">День Восьмой</Day>
+    <Day DayNum="9" TempA="37.7" TempS="37,8" Humidity="50" iTempA="0.1" iTempS="0,1" iHumidity="1.0">День Девятый</Day>
+    <Day DayNum="10" TempA="37.6" TempS="37,8" Humidity="50" iTempA="0.1" iTempS="0.1" iHumidity="1.0" Cooling="true" CoolTime="5" CoolAmount="24" CoolTemp="32.5" CooliTemp="0.5">День Десятый</Day>
+    <Day DayNum="11" TempA="37.6" TempS="38.1" Humidity="50" iTempA="0.1" iTempS="0.1" iHumidity="1.0" Cooling="true" CoolTime="5" CoolAmount="24" CoolTemp="32.5" CooliTemp="0.5">День Одинадцатый</Day>
+    <Day DayNum="12" TempA="37.5" TempS="37,8" Humidity="50" iTempA="0.1" iTempS="0.1" iHumidity="1.0" Cooling="true" CoolTime="6" CoolAmount="24" CoolTemp="32.5" CooliTemp="0.5">День Двенадцатый</Day>
+    <Day DayNum="13" TempA="37.4" TempS="37,8" Humidity="45" iTempA="0.1" iTempS="0.1" iHumidity="1.0" Cooling="true" CoolTime="6" CoolAmount="24" CoolTemp="32.5" CooliTemp="0.5">День Тринадцатый</Day>
+    <Day DayNum="14" TempA="37.3" TempS="38.4" Humidity="45" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="7" CoolAmount="24" CoolTemp="32.5" CooliTemp="0.5">День Четырнадцатый</Day>
+    <Day DayNum="15" TempA="37.3" TempS="38.4" Humidity="43" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="7" CoolAmount="24" CoolTemp="32.5" CooliTemp="0.5">День Четырнадцатый</Day>
+    <Day DayNum="16" TempA="37.3" TempS="38.4" Humidity="43" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="8" CoolAmount="24" CoolTemp="32.5" CooliTemp="0.5">День Пятнадцатый</Day>
+    <Day DayNum="17" TempA="37.3" TempS="38.4" Humidity="42" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="8" CoolAmount="24" CoolTemp="32.5" CooliTemp="0.5">День Шестнадцатый</Day>
+    <Day DayNum="18" TempA="37.3" TempS="38.4" Humidity="65" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="9" CoolAmount="24" CoolTemp="32.5" CooliTemp="0.5">День Семнадцатый</Day>
+    <Day DayNum="19" TempA="37.3" TempS="38,4" Humidity="70" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="10" CoolAmount="24" CoolTemp="32.5" CooliTemp="0.5">День Восемьнадцатый</Day>
+    <Day DayNum="20" TempA="37.3" TempS="38.4" Humidity="75" iTempA="0.1" iTempS="0,1" iHumidity="1.0" Cooling="true" CoolTime="10" CoolAmount="24" CoolTemp="32.5" CooliTemp="0.5">День Девятьнадцатый</Day>
+  </Days>
+  <Programs>
+    <Program Task="Heater" TaskPriority="1" TaskCycle="1000" ProgramType="Internal" ProgramActive="true">
+      <INX>
+        <IN Name="1" ValueType="discrete" Value="" CnlNum="" CnlCode="" />
+        <IN Name="2" ValueType="discrete" Value="" CnlNum="" CnlCode="" />
+        <IN Name="3" ValueType="analog" Value="" CnlNum="" CnlCode="" />
+      </INX>
+      <OUTX>
+        <OUT Name="1" ValueType="discrete" Value="" CnlNum="" CnlCode="" />
+        <OUT Name="2" ValueType="discrete" Value="" CnlNum="" CnlCode="" />
+        <OUT Name="3" ValueType="analog" Value="" CnlNum="" CnlCode="" />
+      </OUTX>
+    </Program>
+    <Program Task="EveryDay" TaskPriority="1" TaskCycle="3000" ProgramType="Daytime" ProgramActive="true">
+      <INX>
+        <IN Name="1" ValueType="discrete" Value="" CnlNum="" CnlCode="" />
+        <IN Name="2" ValueType="discrete" Value="" CnlNum="" CnlCode="" />
+        <IN Name="3" ValueType="analog" Value="" CnlNum="" CnlCode="" />
+      </INX>
+      <OUTX>
+        <OUT Name="1" ValueType="discrete" Value="" CnlNum="" CnlCode="" />
+        <OUT Name="2" ValueType="discrete" Value="" CnlNum="" CnlCode="" />
+        <OUT Name="3" ValueType="analog" Value="" CnlNum="" CnlCode="" />
+      </OUTX>
+    </Program>
+  </Programs>
+</Device>
