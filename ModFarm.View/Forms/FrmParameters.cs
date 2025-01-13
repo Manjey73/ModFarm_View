@@ -382,7 +382,7 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
         private void dgvAttribute_DataError(object sender, DataGridViewDataErrorEventArgs anErr) // Если ошиблись с вводом параметра то в случае отсутствия будет пустая строка
         {
             string cval = dgvAttribute[anErr.ColumnIndex, anErr.RowIndex].Value.ToString(); // .ToLower()
-            dgvAttribute[anErr.ColumnIndex, anErr.RowIndex].Value = "false";
+            dgvAttribute[anErr.ColumnIndex, anErr.RowIndex].Value = "";
             anErr.ThrowException = false;
         }
         #endregion ChangeToCellBox
