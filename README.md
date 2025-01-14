@@ -1,7 +1,7 @@
 # ModFarm_View
 
                     Farm Management Module
-The farm management module for Rapid Scada is designed to manage technological processes.
+The farm management module for RapidScada is designed to manage technological processes.
 The module is designed to replace equipment such as Orion Hotraco Agri, Rotem Control and Management and others like it. At the same time, combining the functionality of management, monitoring and other functionality available in Rapid Scada of your choice.
 
 The module is intended primarily for small farms that cannot afford to purchase the specified equipment.
@@ -11,3 +11,5 @@ The module is intended primarily for small farms that cannot afford to purchase 
 Модуль предназначен для замены такого оборудования как Orion Hotraco Agri, Rotem Control and Management и других подобных. При этом совмещая функционал управления, мониторинга и другого функционала, доступного в RapidScada по выбору.
 
 Модуль предназначен в первую очередь для небольших хозяйств, которым не по карману приобретать указанное оборудование.
+
+https://github.com/Manjey73/ModFarm_View/releases/download/ModFarm_6.3.0.1/ModFarm_6301.zip
