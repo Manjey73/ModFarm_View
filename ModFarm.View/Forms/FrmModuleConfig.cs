@@ -787,20 +787,6 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
             TreeNode rootNode = new TreeNode { Text = rootElement.Name.ToString(), ImageIndex = 0, SelectedImageIndex = 0 };
 
             trvRoot.Nodes.Add(rootNode); // Наш TreeView
-
-            // TEST
-            if (xml_node.Count > 0)
-            {
-                foreach (var ff in xml_node)
-                {
-                    rtb_Log.Text += $"Key {ff.Key}  Value {ff.Value}" + Environment.NewLine;
-                }
-            }
-            else
-            {
-                rtb_Log.Text += $"xml_node.Count {xml_node.Count}" + Environment.NewLine;
-            }
-            // TEST
         }
         #endregion CreateEmptyRootNode
 
