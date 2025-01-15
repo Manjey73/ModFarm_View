@@ -141,6 +141,11 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
                 }
 
                 IEnumerable<XAttribute> ieAttrNew = lattrNew.AsEnumerable();
+                
+                if (tags == null)
+                {
+                    tags = new Dictionary<string, object>();
+                }
 
                 if (!tags.ContainsKey("Attributes")) // Тут Аттрибуты остаются английские
                 {
@@ -876,6 +881,8 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
             xml_node.Clear();
             trvRoot.ImageList = imgList;
             CreateRootNode();
+            // Очистить FrmParameters
+            ValidateTabPage();
         }
         #endregion NewButtonClick
 
