@@ -25,12 +25,12 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
 
         private Dictionary<string, string> xml_node = new Dictionary<string, string>();
 
-        private ContextMenuStrip contextMenu; // TEST
-
+        private ContextMenuStrip contextMenu;
         private ToolStripMenuItem submenuGroup = new ToolStripMenuItem();
         private Dictionary<string, string> CurLang = new Dictionary<string, string>();
         public static Dictionary<string, string> PrevLang = new Dictionary<string, string>();
 
+        private TreeNode selectNode;
 
         // Словарь индексов изображений для интерфейса
         public static Dictionary<string, int> imageIndex = new Dictionary<string, int> // Словарь индексов изображений
@@ -120,9 +120,14 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
         }
         #endregion LoadXmlToTreeView
 
-        #region ReadParameters
+        #region ReadParameters_AddParameters
         private void ReadParameters(XElement xelement, TreeNode xnode)
         {
+            if (tags == null)
+            {
+                tags = new Dictionary<string, object>();
+            }
+
             // Преобразовать в List и потом обратно в IEnumerable<XAttribute> после смены имен на локализованные ????
             IEnumerable<XAttribute> ieatr = xelement.Attributes();
             if (ieatr.Count() > 0)
@@ -192,7 +197,7 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
                 }
             }
         }
-        #endregion ReadParameters
+        #endregion ReadParameters_AddParameters
 
         #region GetAttributeName Интерфейсная часть
         // Изменение имен атрибутов для языкового вариианта интерфейса
@@ -310,7 +315,7 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
             trvRoot.SelectedNode = e.Node;
             if (trvRoot.SelectedNode.Tag == null) return;
 
-            TreeNode selectNode = trvRoot.SelectedNode;
+            selectNode = trvRoot.SelectedNode; // TEST TreeNode selectNode
             LoadWindow(selectNode);
         }
         #endregion Modify_when_AfterSelect
@@ -377,7 +382,6 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
             xml_node.Clear();
 
             trvRoot.ImageList = imgList;
-
             LoadTemplate(OFD.FileName);
         }
         #endregion ButtonOpenClick
@@ -560,6 +564,8 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
             }
             trvRoot.SelectedNode.Expand(); // Раскрыть текущую ноду после добавления
             modified = true;
+            btOK.Enabled = modified;
+            LoadWindow(trvRoot.SelectedNode);
         }
         #endregion AddParameters_Void
 
@@ -609,6 +615,7 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
 
                 trvRoot.SelectedNode.Remove();
                 modified = true;
+                btOK.Enabled = modified;
             }
             #endregion Delete_Attribute
 
@@ -636,6 +643,8 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
                 // Тут добавить в родительскую Ноду новые данные 
                 trvRoot.SelectedNode.Tag = tags;
                 trvRoot.SelectedNode.Expand(); // Раскрыть текущую ноду после добавления
+
+                LoadWindow(trvRoot.SelectedNode); // TEST
             }
             #endregion AddComment
 
@@ -655,6 +664,8 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
                 // Тут добавить в родительскую Ноду новые данные 
                 trvRoot.SelectedNode.Tag = tags;
                 trvRoot.SelectedNode.Expand(); // Раскрыть текущую ноду после добавления
+
+                LoadWindow(trvRoot.SelectedNode); // TEST
             }
             #endregion AddText
 
@@ -829,6 +840,7 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
                 #endregion EmptyRoot
 
                 rootNode.Expand();
+                trvRoot.SelectedNode = rootNode; // TEST
 
                 // Измерение времени и вывод затраченного времени
                 var elapsed = DateTime.Now.Subtract(start);
@@ -877,6 +889,7 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
             fileName = configFileName;
             tbSave_Click(sender, e);
             modified = false;
+            btOK.Enabled = modified;
         }
 
         private void tbSaveAs_Click(object sender, EventArgs e)
@@ -917,7 +930,7 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
             root.Save(fileName); //  root.Save(configFileName);
 
             modified = false;
-            btOK.Enabled = false;
+            btOK.Enabled = modified;
             // Измерение времени и вывод затраченного времени
             var elapsed = DateTime.Now.Subtract(start); // TEST
             lblFeedback.Text = string.Format("TreeViewSave: {0:N0} ms ({1})", elapsed.TotalMilliseconds, elapsed.Display()); // TEST
@@ -988,19 +1001,17 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
         }
         #endregion MouseRight
 
-
-        // Отображение контекстного меню в зависимости от Ноды
         #region MouseDown
         private void trvRoot_MouseDown(object sender, MouseEventArgs e)
         {
             try
             {
                 TreeViewHitTestInfo htInfo = trvRoot.HitTest(e.X, e.Y);
-                TreeNode selectNode = htInfo.Node;
+                selectNode = htInfo.Node;
                 if (selectNode != null)
                 {
                     trvRoot.SelectedNode = selectNode;
-                    trvRoot.SelectedNode.ContextMenuStrip = null; // TEST
+                    trvRoot.SelectedNode.ContextMenuStrip = null;
                     string nodeText = trvRoot.SelectedNode.Text;
 
                     // [0] submenuGroup, [1] addDevice, [2] addParameter, [3] addDailyСalendar, [4] addDay, [5] addPrograms,  [6] addProgram,
@@ -1072,8 +1083,7 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
                         // Сюда входят группы птиц и животных
                         contextMenu.Items[1].Available = true;
                     }
-
-                    trvRoot.SelectedNode.ContextMenuStrip = contextMenu; // TEST
+                    trvRoot.SelectedNode.ContextMenuStrip = contextMenu;
                 }
             }
             catch { }

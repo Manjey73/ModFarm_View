@@ -5,8 +5,8 @@
     <Nullable>disable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyVersion>6.3.0.1</AssemblyVersion>
-    <FileVersion>6.3.0.1</FileVersion>
+    <AssemblyVersion>6.3.0.2</AssemblyVersion>
+    <FileVersion>6.3.0.2</FileVersion>
     <Company>Burakhin Andrey</Company>
 	<GenerateResourceWarnOnBinaryFormatterUse>false</GenerateResourceWarnOnBinaryFormatterUse>
   </PropertyGroup>

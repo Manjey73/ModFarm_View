@@ -26,10 +26,10 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
         ToolStripButton findCnl;
 
         // Интерфейс
-        private List<string> YesNo = new List<string> { "true", "false", }; // fill the drop down items.. Выпадающий список для ячейки с булевой переменной 
+        private List<string> YesNo = new List<string> { "true", "false" }; // fill the drop down items.. Выпадающий список для ячейки с булевой переменной 
         private List<string> listOfVar;
         // Список задач, которые требуется исключить из списка выбора. Должны быть доступны только те, программы которых можно выполнить.
-        private List<string> noTask = new List<string> { "Farm", "Func", "FrmModuleConfig", "FrmParameters", "Device", "Programs", "Calendar", "ProgramX", "DayX", "Input", "Output", "TimeSpanExtender", "ProgramzAttribute" };
+        private List<string> ignoreTask = new List<string> { "Farm", "Func", "TON", "FrmModuleConfig", "FrmParameters", "Device", "Programs", "Calendar", "ProgramX", "DayX", "Input", "Output", "TimeSpanExtender", "ProgramzAttribute" };
         private List<string> listOfTask;
         #endregion Variables
 
@@ -662,12 +662,12 @@ namespace Scada.Server.Modules.ModFarm.View.Forms
 
                 if (result.Tag is XAttribute)
                 {
-                    ModFarmView.fConfig.trvRoot.SelectedNode.Nodes[result.Index].Tag = new XAttribute(ModFarmView.fConfig.trvRoot.SelectedNode.Nodes[result.Index].Text, ModFarmView.fConfig.trvRoot.SelectedNode.Nodes[result.Index].Tag = dgvAttribute[ciValue, ri].Value); // TEST
+                    ModFarmView.fConfig.trvRoot.SelectedNode.Nodes[result.Index].Tag = new XAttribute(ModFarmView.fConfig.trvRoot.SelectedNode.Nodes[result.Index].Text, ModFarmView.fConfig.trvRoot.SelectedNode.Nodes[result.Index].Tag = dgvAttribute[ciValue, ri].Value);
                 }
-                else if (result.Tag is string)
-                {
-                    ModFarmView.fConfig.trvRoot.SelectedNode.Nodes[result.Index].Tag = dgvAttribute[ciValue, ri].Value;
-                }
+                //else if (result.Tag is string)
+                //{
+                //    ModFarmView.fConfig.trvRoot.SelectedNode.Nodes[result.Index].Tag = dgvAttribute[ciValue, ri].Value;
+                //}
                 Modified = true;
             }
         }
