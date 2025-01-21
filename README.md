@@ -13,6 +13,7 @@ The module is intended primarily for small farms that cannot afford to purchase 
 Модуль предназначен в первую очередь для небольших хозяйств, которым не по карману приобретать указанное оборудование.
 
 https://github.com/Manjey73/ModFarm_View/releases/download/ModFarm_6.3.0.1/ModFarm_6301.zip
+
 ![ActivateModule](https://github.com/user-attachments/assets/744441c0-0230-473d-8173-bca321f72d79)
 ![Module_Log](https://github.com/user-attachments/assets/69df7172-ceea-449b-a705-f5e68da51de0)
 ![HysteresisPrg](https://github.com/user-attachments/assets/4a8925a6-09e1-4987-82c6-72995392a309)
